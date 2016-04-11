@@ -1,0 +1,10 @@
+<carousel3d ng-model="vm.headerslides" options="vm.options">
+  <carousel3d-slide ng-repeat="slide in vm.headerslides track by slide.id"
+  ">
+  <figure>
+    <img class="img-thumbnail" ng-src="{{slide.src}}" alt=""/>
+    <figcaption ng-bind="slide.description"></figcaption>
+  </figure>
+  </carousel3d-slide>
+</carousel3d>
+

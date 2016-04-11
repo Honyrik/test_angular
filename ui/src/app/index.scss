@@ -1,0 +1,107 @@
+/**
+ *  Do not remove this comments bellow. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+
+$body-color: #2F96B4;
+$menu-color-background: darken( $body-color, 25%);
+$menu-color-text: #ffffff;
+$menu-active-focus-text-color: darken($menu-color-text, 30%);
+$menu-color-active: darken( $menu-color-background, 3% );
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
+
+html {
+  font-family: 'Roboto Slab', serif;
+}
+
+[layout=row] {
+  flex-direction: row;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+md-toolbar.md-default-theme {
+  background-color: black;
+}
+
+section.jumbotron {
+  margin-bottom: 30px;
+  padding: 1px 30px;
+  background-color: #5aadbb;
+  text-align: center;
+
+  color: white;
+
+  h1 {
+    font-size: 3em;
+  }
+}
+
+.techs {
+  display: flex;
+  flex-flow: row wrap;
+
+  md-card {
+    width: 30%;
+
+    img.pull-right {
+      float: right;
+      width: 50px;
+    }
+  }
+}
+
+.flexslider-container {
+  width: 40%;
+  margin: 10px auto;
+}
+
+body {
+  //background-color: $body-color;
+  background-image: radial-gradient($body-color, #133d49);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wlp-middle-container {
+  background: #fefcea; /* Для старых браузров */
+  background: linear-gradient(to top, #9c9c9c, #ffffff );
+  height: 100%;
+  //margin-top: -150px;
+}
+
+.open-quote-before:before {
+  content: open-quote;
+}
+.open-quote-after:after {
+  content: open-quote;
+}
+.close-quote-before:before {
+  content: close-quote;
+}
+.close-quote-after:after {
+  content: close-quote;
+}
+
+/**
+ *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector
