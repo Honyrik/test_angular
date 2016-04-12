@@ -13,10 +13,13 @@ $menu-active-focus-text-color: darken($menu-color-text, 30%);
 $menu-color-active: darken( $menu-color-background, 3% );
 
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 
 html {
   font-family: 'Roboto Slab', serif;
 }
+html, body {height: 100%;}
+#wrap-main {_height: 100%; min-height: 100%;}
 
 [layout=row] {
   flex-direction: row;
@@ -76,7 +79,7 @@ section.jumbotron {
 body {
   //background-color: $body-color;
   background-image: radial-gradient($body-color, #133d49);
-  font-family: 'Open Sans', sans-serif;
+  //font-family: 'Open Sans', sans-serif;
 }
 
 .wlp-middle-container {
@@ -99,6 +102,19 @@ body {
   content: close-quote;
 }
 
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
  *  all your sass files automatically
