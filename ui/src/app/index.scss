@@ -19,7 +19,6 @@ html {
   font-family: 'Roboto Slab', serif;
 }
 html, body {height: 100%;}
-#wrap-main {_height: 100%; min-height: 100%;}
 
 [layout=row] {
   flex-direction: row;
@@ -76,12 +75,9 @@ section.jumbotron {
   margin: 10px auto;
 }
 
-body {
-  //background-color: $body-color;
-  background-image: radial-gradient($body-color, #133d49);
-  //font-family: 'Open Sans', sans-serif;
+.figcaption-home {
+    padding: 10px 0px !important;
 }
-
 .wlp-middle-container {
   background: #fefcea; /* Для старых браузров */
   background: linear-gradient(to top, #9c9c9c, #ffffff );
