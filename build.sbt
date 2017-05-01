@@ -2,9 +2,9 @@ name := """work_later_pay"""
 
 version := "1.0-SNAPSHOT"
 
-lazy val root = (project in file(".")).enablePlugins(PlayJava, PlayEbean)
+lazy val root = (project in file(".")).enablePlugins(PlayJava, PlayEbean, SbtWeb)
 
-scalaVersion := "2.11.6"
+scalaVersion := "2.11.7"
 
 libraryDependencies ++= Seq(
   javaCore,
@@ -21,3 +21,5 @@ routesGenerator := InjectedRoutesGenerator
 
 sourceDirectories in TwirlKeys.compileTemplates in Compile ++= Seq(baseDirectory.value / "ui/src")
 watchSources <++= baseDirectory map { path => ((path / "ui/src") ** "*.scala.*").get }
+
+fork in run := true
